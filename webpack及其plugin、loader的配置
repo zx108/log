@@ -1,0 +1,55 @@
+//以下所有注意版本问题 
+
+//安装wenpack
+    cnpm i webpack@3 -D
+//
+webpack.config.js
+    const path = require("path")
+    const htmlWebpackPlugin = require("html-webpack-plugin")
+    module.exports={
+        entry:path.join(__dirname,"./src/main.js"),
+        output:{
+            path:path.join(__dirname,"/dist")m
+            filename:"bundle.js"
+        },
+        plugins:[
+            //相关的插件
+        ],
+        modules:[
+            //第三方loader
+        ]
+    }
+
+//安装webpack-dev-server
+    cnpm i webpack-dev-server@2 -D
+//配置
+ 在packsge。json
+    "dev":"webpack"
+在webpack.config.js
+    entry:path.join(__dirname,"./src/main.js"),
+    output:{
+        path:path.join(__dirname,"/dist/"),
+        filename:"bundle.js"
+    }
+
+//安装html-webpack-plugin
+     cnpm i html-webpack-plugin@2.30.1 -D
+
+//安装style-oader,css-loader,用于加载解析css文件
+    cnpm i style-loader@0.19.1 css-loader@0.28.7 -D
+
+//安装less-loader、less，用于加载解析less文件
+
+//安装sass-loader、node-sass，用于加载解析scss文件
+
+//安装url-loader  file-loader ，用于加载样式表中链接
+cnpm i url-loader@0.6.2 file-loader@1.1.6 -D
+
+//安装
+    babel-core babel-loader babel-plugin-transform-runtime -D
+    babel-preset-env babel-preset-stage-0 -D
+    用于解析js高级语法
+
+
+
+
